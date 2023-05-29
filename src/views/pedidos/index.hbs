@@ -1,0 +1,39 @@
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+  <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mt-12">
+
+    <table class="table-fixed w-full">
+      <thead>
+        <tr class="bg-green-500 text-white">
+          <th class="w-1/4 py-4 ...">Nombre</th>
+          <th class="w-1/4 py-4 ...">Telefono</th>
+          <th class="w-1/4 py-4 ...">Precio</th>
+          <th class="w-1/4 py-4 ...">Direccion</th>
+          <th class="w-1/4 py-4 ...">Modelo</th>
+          <th class="w-1/4 py-4 ...">Cantidad</th>
+          <th class="w-1/2 py-4 ...">Tamañio</th>
+          <th class="w-1/4 py-4 ...">Tipo Perno</th>
+          <th class="w-1/4 py-4 ...">Origen compra</th>
+          <th class="w-1/4 py-4 ...">Envio</th>
+          <th class="w-1/4 py-4 ...">Costo Envio</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pedidos}}
+        <tr>
+          <td class="p-3">{{nombre}}</td>
+          <td class="p-3 text-center">{{telefono}}</td>
+          <td class="p-3 text-center">{{precio}}</td>
+          <td class="p-3 text-center">{{localidad}}</td>
+          <td class="p-3 text-center">{{cantidad}}</td>
+          <td class="p-3 text-center">{{idTipoPerno}}</td>
+          <td class="p-3 text-center">{{modelo}}</td>
+          <td class="p-3 text-center">{{tamanio}}</td>
+          <td class="p-3 text-center">{{idOrigenCompra}}</td>
+          <td class="p-3 text-center">{{envio}}</td>
+          <td class="p-3 text-center">{{costo_envio}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
